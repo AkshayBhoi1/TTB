@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking Intelligence System</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/adde82fe4a.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'Css/style.css' %} ">
+<style>
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url("{% static 'images/img.jpg' %}") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+</style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="{% static 'images/looo.jpg' %}" alt="">
+    </a>
+
+    <nav class="navbar">
+
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+<!--        <a href="#blogs">courses</a>-->
+            <div class="dropdown">
+  <button class="dropbtn">Train</button>
+  <div class="dropdown-content">
+    <a href="car/">Add </a>
+    <a href="sh/">Show Train </a>
+
+  </div>
+</div>
+            <a href="#contact">contact</a>
+
+    </nav>
+
+<!--    <div class="icons">-->
+<!--        <div class="fas fa-search" id="search-btn"></div>-->
+<!--&lt;!&ndash;        <div class="fas fa-user-alt" id="user-btn"></div>&ndash;&gt;-->
+<!--    <a href="lg/"> <div class="fas fa-user-alt" id="user-btn"></div>-->
+<!--    </a>-->
+<!--    </div>-->
+    <div class="icons">
+<!--        <a href="rg/"><div class="fas fa-user-friends" id="search-btn"></div></a>-->
+        <a href="lg/"> <div class="fas fa-user-alt" id="user-btn"></div></a>
+        <a href="car/"> <div class="fa-solid fa-train" id="car-btn"></div></a>
+
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Train Booking Service</h3>
+        <p>Train Booking provide services that will tell you the to availability of th trains.
+                               Our services include train availability, with just one go,you just need to
+                                to fill the details of train from one station to another station .This system  provides you an ease to check trains and the availability of seats available .</p>
+
+        <a href="/rg" class="btn">To join us</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about us</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="{% static 'images/about.jpeg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes our System special?</h3>
+            <p>This is one of the fastest ways to get latest booking information and check seats availability in real time.
+All you need to do is enter the From & To Station Name / Code and boxes above and select travel period & class to get the current Seats Availability on all trains.
+You can find Staion Name or code by just entering first 3 letters and it will show you a list from which you can select the station.
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- blogs section starts  -->
+<!--<section class="blogs" id="blogs">-->
+
+<!--    <h1 class="heading"><span>Courses we offer</span> </h1>-->
+
+<!--    <div class="box-container">-->
+
+<!--        <div class="box">-->
+<!--            <div class="image">-->
+<!--                <img src="{% static 'images/p.jpg' %}" alt="">-->
+<!--            </div>-->
+<!--            <div class="content">-->
+<!--                <a href="pg/" class="title">Python</a>-->
+<!--                <span>by admin</span>-->
+<!--                <p>“Get yourself ready to become a pro in Python programming language.Python is the number one language choice for machine learning, data science and artificial intelligence. To get those high paying jobs you need an expert knowledge of Python, and that’s what you will get from this course.”</p>-->
+<!--                <a href="pg/" class="btn">read more</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="box">-->
+<!--            <div class="image">-->
+<!--                <img src="{% static 'images/j.jpg' %}" alt="">-->
+<!--            </div>-->
+<!--            <div class="content">-->
+<!--                <a href="jg/" class="title">Java</a>-->
+<!--                <span>by admin</span>-->
+<!--                <p>“Want to see yourself as a java developer.Find the right instructor for you.Choose from many topics,skill levels,and languages.Join learners already learning on IT DIGI Solutions.Website uses Java for development, and employers frequently seek java developers”</p>-->
+<!--                <a href="jg/" class="btn">read more</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="box">-->
+<!--            <div class="image">-->
+<!--                <img src="{% static 'images/c.jpg' %}" alt="">-->
+<!--            </div>-->
+<!--            <div class="content">-->
+<!--                <a href="cg/" class="title">C++</a>-->
+<!--                <span>by admin</span>-->
+<!--                <p>“Learn C++ fundamentals as well as advanced topics. Start today by getting involved with us. Develop professional skills.In this C++ certification course you will learn coding applications from scratch with complete training setup and coding which will help you to learn other languages.”</p>-->
+<!--                <a href="cg/" class="btn">read more</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--</section>-->
+<!-- blogs section ends  -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact us</span> </h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59600.98831916924!2d75.5404034863075!3d20.990160907843006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fa4a1eab90f%3A0x37f67bd21bff0a3c!2sJalgaon%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1643310993432!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <a href="#contact" class="btn">Submit</a>
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+<section class="footer">
+<div class="credit">&copy Copyright by <span>Train Booking Intelligence System</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+</body>
+</html>
